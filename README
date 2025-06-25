@@ -1,74 +1,88 @@
-# 🔍 Binary Classification Project – DS Project 6  
-## 📊 Clasificación binaria de clientes
+Video Games Sales Analysis — Análisis de Ventas de Videojuegos
 
-Este proyecto se enfoca en construir un modelo de clasificación binaria para predecir un resultado de negocio (como cancelación de cliente, conversión, o selección de plan), utilizando técnicas de machine learning supervisado.  
-This project focuses on building a binary classification model to predict a business outcome (e.g., churn, conversion, or plan selection), using supervised machine learning techniques.
+📋 Project Description / Descripción del Proyecto
+This project analyzes historical video game sales data to identify patterns that define successful games. The analysis considers genres, platforms, regions, and ESRB ratings to help Ice store plan marketing campaigns and make production decisions.
 
----
+Este proyecto analiza datos históricos de ventas de videojuegos para identificar patrones que determinan el éxito de los juegos. El análisis considera géneros, plataformas, regiones y clasificaciones ESRB, para ayudar a la tienda Ice a planificar campañas y tomar decisiones de producción.
 
-## 🎯 Objetivos / Objectives
-
-- Analizar el comportamiento de los usuarios según características como llamadas, minutos, internet, duración.  
-- Aplicar modelos de clasificación y comparar su desempeño.  
-- Visualizar resultados y ajustar el umbral de decisión.  
-
-- Analyze user behavior using features such as calls, minutes, internet, and duration.  
-- Apply classification models and compare their performance.  
-- Visualize results and tune decision thresholds.
-
----
-
-## 🧰 Herramientas / Tools Used
-
-- Python 3  
-- Pandas, NumPy  
-- Scikit-learn (RandomForest, LogisticRegression)  
-- Matplotlib  
-- Jupyter Notebook
-
----
-
-## 🧠 Enfoque / Approach
-
-1. **Carga y exploración de datos**  
-   - Revisión de las variables relevantes  
-   - Preparación de conjuntos de entrenamiento y prueba
-
-2. **Entrenamiento de modelos**  
-   - Modelos usados: Regresión logística y Random Forest  
-   - Evaluación con métricas: Accuracy, ROC AUC, Recall
-
-3. **Ajuste de umbral de decisión**  
-   - Se ajusta el threshold (`predict_proba`) para mejorar la sensibilidad del modelo
-
----
-
-## 📈 Resultados / Results
-
-- **Modelo seleccionado:** Random Forest (`max_depth=11`, `n_estimators=300`)  
-- **Métricas clave:** *(completa con tus valores)*  
-  - Accuracy: `XX%`  
-  - ROC AUC: `XX`  
-  - Recall: `XX%`
-
----
-
-## 📁 Estructura del proyecto / Project Structure
-
-S-project-6/
-├── project_spring_6.ipynb # Notebook principal
-└── README.md # Este archivo
+🗂️ Repository Contents / Contenido del Repositorio
+bash
+Copiar
+Editar
+/project_root
+│
+├── games.csv                     # Dataset original / Original dataset
+├── video_games_analysis.ipynb    # Notebook con todo el análisis / Analysis notebook
+├── README.md                     # Este archivo / This file
+└── images/                       # Carpeta con gráficos generados (opcional) / Folder for generated plots 
 
 
----
+(optional)
+📊 Key Analysis Highlights / Resultados Clave
+Top global platforms: PS2, Xbox 360, PS3, Wii, DS, with regional differences.
 
-## 🚀 Lecciones aprendidas / Lessons Learned
+Most sold genres in NA and EU: Action, Shooter, Sports; in Japan: Role-Playing.
 
-- Cómo aplicar Random Forest y Logistic Regression a un problema de clasificación.  
-- Importancia de ajustar el umbral de decisión en problemas desequilibrados.  
-- Evaluar modelos usando múltiples métricas, no solo accuracy.
+ESRB E (Everyone) rating dominates sales in NA and EU.
 
----
+Weak correlation between critic/user scores and sales; critic scores slightly more influential.
 
-📫 ¿Tienes sugerencias o te interesa colaborar en este tipo de proyectos?  
-Conectemos por [LinkedIn](https://www.linkedin.com/in/jovan-espinosa-llaguno-b04b0663/)
+Statistical tests show significant difference in user ratings between Xbox One and PC, but not between Action and Sports genres.
+
+Principales plataformas globales: PS2, Xbox 360, PS3, Wii, DS, con diferencias regionales.
+
+Géneros más vendidos en NA y EU: Action, Shooter, Sports; en Japón: Role-Playing.
+
+Clasificación ESRB E (Everyone) domina ventas en NA y EU.
+
+Correlación débil entre valoraciones y ventas, con mayor influencia de las críticas.
+
+Pruebas estadísticas indican diferencia significativa en valoraciones entre Xbox One y PC, pero no entre géneros Action y Sports.
+
+🧰 Technologies & Libraries Used / Tecnologías y Librerías Usadas
+Python 3.x
+
+Pandas
+
+NumPy
+
+Matplotlib
+
+Seaborn
+
+SciPy
+
+📈 Analysis Overview / Resumen del Análisis
+Data cleaning and preprocessing (handling missing data, type conversions, feature creation).
+
+Exploratory Data Analysis (EDA) on sales by year, platform, genre, and region.
+
+ESRB rating influence on regional sales.
+
+Correlation analysis between review scores and sales.
+
+Hypothesis testing on user scores across platforms and genres.
+
+Limpieza y preprocesamiento de datos (manejo de valores faltantes, conversiones, creación de variables).
+
+Análisis exploratorio de datos (ventas por año, plataforma, género y región).
+
+Influencia de la clasificación ESRB en ventas regionales.
+
+Análisis de correlación entre valoraciones y ventas.
+
+Pruebas de hipótesis sobre valoraciones de usuarios según plataformas y géneros.
+
+🚀 How to Run / Cómo Ejecutar
+Clone this repository / Clona este repositorio
+
+Ensure you have Python 3 and required libraries installed / Asegúrate de tener Python 3 y las librerías necesarias instaladas
+
+Run the notebook video_games_analysis.ipynb to reproduce the analysis / Ejecuta el notebook para reproducir el análisis
+
+Explore and adapt as needed / Explora y adapta según sea necesario
+
+📧 Contact / Contacto
+Tu Nombre / Your Name
+LinkedIn | GitHub | tu.email@ejemplo.com
+
