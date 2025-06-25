@@ -1,0 +1,74 @@
+# 🔍 Binary Classification Project – DS Project 6  
+## 📊 Clasificación binaria de clientes
+
+Este proyecto se enfoca en construir un modelo de clasificación binaria para predecir un resultado de negocio (como cancelación de cliente, conversión, o selección de plan), utilizando técnicas de machine learning supervisado.  
+This project focuses on building a binary classification model to predict a business outcome (e.g., churn, conversion, or plan selection), using supervised machine learning techniques.
+
+---
+
+## 🎯 Objetivos / Objectives
+
+- Analizar el comportamiento de los usuarios según características como llamadas, minutos, internet, duración.  
+- Aplicar modelos de clasificación y comparar su desempeño.  
+- Visualizar resultados y ajustar el umbral de decisión.  
+
+- Analyze user behavior using features such as calls, minutes, internet, and duration.  
+- Apply classification models and compare their performance.  
+- Visualize results and tune decision thresholds.
+
+---
+
+## 🧰 Herramientas / Tools Used
+
+- Python 3  
+- Pandas, NumPy  
+- Scikit-learn (RandomForest, LogisticRegression)  
+- Matplotlib  
+- Jupyter Notebook
+
+---
+
+## 🧠 Enfoque / Approach
+
+1. **Carga y exploración de datos**  
+   - Revisión de las variables relevantes  
+   - Preparación de conjuntos de entrenamiento y prueba
+
+2. **Entrenamiento de modelos**  
+   - Modelos usados: Regresión logística y Random Forest  
+   - Evaluación con métricas: Accuracy, ROC AUC, Recall
+
+3. **Ajuste de umbral de decisión**  
+   - Se ajusta el threshold (`predict_proba`) para mejorar la sensibilidad del modelo
+
+---
+
+## 📈 Resultados / Results
+
+- **Modelo seleccionado:** Random Forest (`max_depth=11`, `n_estimators=300`)  
+- **Métricas clave:** *(completa con tus valores)*  
+  - Accuracy: `XX%`  
+  - ROC AUC: `XX`  
+  - Recall: `XX%`
+
+---
+
+## 📁 Estructura del proyecto / Project Structure
+
+S-project-6/
+├── project_spring_6.ipynb # Notebook principal
+└── README.md # Este archivo
+
+
+---
+
+## 🚀 Lecciones aprendidas / Lessons Learned
+
+- Cómo aplicar Random Forest y Logistic Regression a un problema de clasificación.  
+- Importancia de ajustar el umbral de decisión en problemas desequilibrados.  
+- Evaluar modelos usando múltiples métricas, no solo accuracy.
+
+---
+
+📫 ¿Tienes sugerencias o te interesa colaborar en este tipo de proyectos?  
+Conectemos por [LinkedIn](https://www.linkedin.com/in/jovan-espinosa-llaguno-b04b0663/)
